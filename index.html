@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Global HTML</title>
+
+
+
+    <!-- ------------------------------ Slick CSS ------------------------------ -->
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css"
+        integrity="sha512-wR4oNhLBHf7smjy0K4oqzdWumd+r5/+6QO/vDda76MW5iug4PT7v86FoEkySIJft3XA0Ae6axhIvHrqwm793Nw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" /> -->
+
+    <!-- ------------------------------ Slick Theme CSS ------------------------------ -->
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css"
+        integrity="sha512-6lLUdeQ5uheMFbWm3CP271l14RsX1xtx+J5x2yeIDkkiBpeVTNhTqijME7GgRKKi6hCqovwCoBTlRBEC20M8Mg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" /> -->
+
+    <!-- ------------------------------ Font Awesome CSS ------------------------------ -->
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" /> -->
+
+
+    <!-- ------------------------------ Fonts Face CSS ------------------------------ -->
+    <!-- <link rel="stylesheet" href="Assets/Fonts/font_stylesheet.css" /> -->
+
+    <!-- ------------------------------ My Global CSS ------------------------------ -->
+    <link rel="stylesheet" href="Styles/global_style.css" />
+
+    <!-- ------------------------------ My Style CSS ------------------------------ -->
+    <!-- <link rel="stylesheet" href="Styles/style.css" /> -->
+    
+</head>
+<body>
+    
+    <section class="periodic_section">
+        <div class="periodic_outer">
+            <div class="wrapper">
+                <div class="periodic_inner">
+
+                    <div class="periodic_top">
+                        <div class="periodic_heading">
+                            <h3>periodic - filtering & sorting</h3>
+                        </div>
+                        <div class="periodic_filter padtop50">
+                            <div class="periodic_filter_heading">
+                                <h4>Filter</h4>
+                            </div>
+                            <div class="periodic_filter_buttons ">
+                                <button class="button_active button" data-property="Show All" onclick="filterElement(this)">Show All</button>
+                                <button class="button" data-property="Non Metal" onclick="filterElement(this)">Non-Metal</button>
+                                <button class="button" data-property="Noble Gas" onclick="filterElement(this)">Noble Gas</button>
+                                <button class="button" data-property="Alkali Metal" onclick="filterElement(this)">Alkali Metal</button>
+                                <button class="button" data-property="Alkaline Earth Metal" onclick="filterElement(this)">Alkaline Earth Metal</button>
+                            </div>
+                        </div>
+                        <div class="periodic_sort padtop50">
+                            <div class="periodic_sort_heading">
+                                <h4>Sort</h4>
+                            </div>
+                            <div class="periodic_sort_buttons">
+                                <button class="button_active button" data-property="Original Order" onclick="sortElement(this)">Original Order</button>
+                                <button class="button" data-property="element_name" onclick="sortElement(this)">Name</button>
+                                <button class="button" data-property="element_symbol" onclick="sortElement(this)">Symbol</button>
+                                <button class="button" data-property="element_atomic_number" onclick="sortElement(this)">Number</button>
+                                <button class="button" data-property="element_atomic_mass" onclick="sortElement(this)">Weight</button>
+                                <button class="button" data-property="element_properties" onclick="sortElement(this)">Category</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="periodic_content_parent padtop50">
+                        <div class="periodic_content">
+                            <!-- Element comes here -->
+                        </div>
+                    </div>                 
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- <div class="element element1 hydrogen text_center primary_bgcolor br_primary pad10">
+        <div class="element_top_content flex align_center space_between">
+            <div class="element_atomic_number">
+                <p>1</p>
+            </div>
+            <div class="element_atomic_mass">
+                <p>1.0080</p>
+            </div>
+        </div>
+        <div class="element_bottom_content">
+            <div class="element_symbol">
+                <h2>H</h2>
+            </div>
+            <div class="element_name">
+                <p>Hydrogen</p>
+            </div>
+            <div class="element_properties">
+                <p>Property1</p>
+                <p>Property2</p>
+            </div>
+        </div>
+    </div> -->
+
+                               
+
+
+    <!-- ===================== Adding Scripts ====================== -->
+
+    <!-- ------------------------------ jQuery script ------------------------------ -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+
+    <!-- ------------------------------ jQuery validation script ------------------------------ -->
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.5/additional-methods.min.js" 
+    integrity="sha512-6S5LYNn3ZJCIm0f9L6BCerqFlQ4f5MwNKq+EthDXabtaJvg3TuFLhpno9pcm+5Ynm6jdA9xfpQoMz2fcjVMk9g==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script> -->
+
+    <!-- ------------------------------ Slick Theme JS ------------------------------ -->
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.js"
+    integrity="sha512-WNZwVebQjhSxEzwbettGuQgWxbpYdoLf7mH+25A7sfQbbxKeS5SQ9QBf97zOY4nOlwtksgDA/czSTmfj4DUEiQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script> -->
+
+    <!-- ------------------------------ Font Awesome KIT JS ------------------------------ -->
+    <!-- <script src="https://kit.fontawesome.com/4576560a6b.js" crossorigin="anonymous"></script> -->
+
+    <!-- ------------------------------ My Script JS ------------------------------ -->
+    <script src="Scripts/script.js"></script>
+
+
+</body>
+</html>
